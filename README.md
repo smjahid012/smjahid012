@@ -14,8 +14,6 @@
 
 I'm an **AI Systems Architect** focused on the orchestration primitives, cognitive state machines, and inter-agent protocols that make agentic systems reliable at runtime.
 
-Each project below is an independent production system built under **[SMLabs AI](https://smlabsai.com)**:
-
 ### 🧠 Agent Orchestration System
 **[smagent / Cognitive Runtime](https://github.com/smjahid012)** *(private)*
 Agentic OS with real orchestration primitives, cognitive state management, and inter-agent communication protocols. Built from scratch for full production control — no framework lock-in.
@@ -25,7 +23,7 @@ Agentic OS with real orchestration primitives, cognitive state management, and i
 Multi-provider LLM routing layer with protocol translation — routes Claude Code CLI through Gemini, Groq, DeepSeek, and OpenRouter. Direct provider integration — minimal abstraction overhead.
 
 ### 🧬 Edge AI System
-**[MedGemma FORENSIC](https://github.com/smjahid012/medgemma-forensic)**
+**[MedGemma FORENSIC](https://github.com/smjahid012/medgemma-forensic)** *(public)*
 Offline multimodal AI diagnostics on a $200 Android device. Gemma 3 1B + MedSigLIP + MedASR at 417MB peak RAM. Submitted to Google's Health AI Developer Foundations program.
 
 ### 💰 SaaS System
@@ -162,11 +160,9 @@ Provisioning, securing, and operating Linux servers without a managed platform l
 </picture>
 
 <img width="49%" src="https://github-readme-streak-stats.herokuapp.com?user=smjahid012&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" />
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smjahid012&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&count_private=true&hide=html,css" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smjahid012&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&count_private=true&hide=php,blade,vue,html,css" />
 
 <br/>
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=smjahid012&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" />
 
 <img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=smjahid012&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity" />
 
