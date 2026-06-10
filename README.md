@@ -10,22 +10,37 @@
 
 ---
 
-## 🧠 What I Build
+## 🧠 Systems I Have Built
 
-I'm an **AI Systems Architect** focused on the layer *beneath* the AI hype — the orchestration primitives, cognitive state machines, and inter-agent protocols that make agentic systems actually work at runtime.
+I'm an **AI Systems Architect** focused on the orchestration primitives, cognitive state machines, and inter-agent protocols that make agentic systems reliable at runtime.
 
-Currently building under **[SMLabs AI](https://smlabsai.com)**:
+Each project below is an independent production system built under **[SMLabs AI](https://smlabsai.com)**:
 
-- **[smagent / Cognitive Runtime](https://github.com/smjahid012/smagent)** — Agentic OS focused on real orchestration primitives, cognitive state management, and inter-agent communication protocols. Not another LangChain wrapper.
-- **[MedGemma FORENSIC](https://github.com/smjahid012/medgemma-forensic)** — Offline AI pathologist for zero-connectivity environments. Runs Gemma 3 1B + MedSigLIP + MedASR on a $200 Android device at 417MB peak RAM. Submitted to Google's Health AI Developer Foundations program.
-- **[SMExpense](https://smexpense.com)** — Production SaaS: AI-powered expense tracker with receipt scanning, voice input, and smart budgeting. First product of SMLabs AI.
-- **[Serper Search MCP Server](https://github.com/smjahid012/serper-search-mcp-server)** — Enterprise-grade MCP server exposing Serper web search to Claude Code, Cursor, and any MCP-compatible agent runtime.
+### 🧠 Agent Orchestration System
+**[smagent / Cognitive Runtime](https://github.com/smjahid012)** *(private)*
+Agentic OS with real orchestration primitives, cognitive state management, and inter-agent communication protocols. Built from scratch for full production control — no framework lock-in.
+
+### 🌐 LLM Gateway System
+**[anthropic-proxy](https://github.com/smjahid012)** *(public)*
+Multi-provider LLM routing layer with protocol translation — routes Claude Code CLI through Gemini, Groq, DeepSeek, and OpenRouter. Direct provider integration — minimal abstraction overhead.
+
+### 🧬 Edge AI System
+**[MedGemma FORENSIC](https://github.com/smjahid012/medgemma-forensic)**
+Offline multimodal AI diagnostics on a $200 Android device. Gemma 3 1B + MedSigLIP + MedASR at 417MB peak RAM. Submitted to Google's Health AI Developer Foundations program.
+
+### 💰 SaaS System
+**[SMExpense](https://smexpense.com)** *(private)*
+AI-powered expense analyzer with receipt scanning, voice input, and smart budgeting.
+
+### 🔌 AI Tooling System
+**[Serper Search MCP Server](https://github.com/smjahid012/serper-search-mcp-server)**
+8-tool MCP server (web, images, videos, news, shopping, places, deep research, RAG context) used with Claude, Cursor, Windsurf, n8n, and KiloCode. Published on npm and Docker. TypeScript, full type safety, zero telemetry.
 
 ---
 
 ## 🔬 The MedGemma FORENSIC Architecture
 
-> *Running a Multimodal Diagnostic Suite (LLM + Vision + Audio + Anomaly Detection) on a consumer Android device was considered impossible. I solved the Memory Paradox.*
+> *Running a Multimodal Diagnostic Suite (LLM + Vision + Audio + Anomaly Detection) on a consumer Android device under 500MB peak RAM.*
 
 A "Traffic Cop" sequential AI kernel (`ModelLifecycleManager.kt`) orchestrates ~4.3GB of model weights serially — keeping peak native heap at ~417MB on a 4GB RAM device.
 
@@ -37,48 +52,78 @@ Worker Node (Field Medic)          Anchor Node (Command Center)
      ↓ P2P Mesh / WiFi Direct ↓    └── AnomalyEngine → Epidemic Clusters
 ```
 
-📺 [1-min overview](https://www.youtube.com/watch?v=70MFbYzqVho) · [2-min worker node](https://www.youtube.com/watch?v=qNRboKAnfrs) · [3-min mesh pipeline](https://www.youtube.com/watch?v=GGymf9JfSEI) · [Live Gradio Demo](https://huggingface.co/spaces/smfaisal/medgemma-forensic)
+📺 [Live Gradio Demo](https://huggingface.co/spaces/smfaisal/medgemma-forensic)
 
 ---
 
 ## 🛠️ Tech Stack
 
-**AI & Agents**
+**AI / ML & Agents**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)
 ![LiteRT](https://img.shields.io/badge/LiteRT_(TFLite)-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![ONNX](https://img.shields.io/badge/ONNX_Runtime-005CED?style=flat-square&logo=onnx&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logoColor=white)
 ![MCP](https://img.shields.io/badge/MCP_Protocol-6366F1?style=flat-square&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini_2.5_Flash-4285F4?style=flat-square&logo=google&logoColor=white)
+
+**LLM Providers & APIs**
+
+![Claude](https://img.shields.io/badge/Claude_API-D97757?style=flat-square&logoColor=white)
+![Gemini API](https://img.shields.io/badge/Gemini_API-4285F4?style=flat-square&logo=google&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=flat-square&logoColor=white)
+![DeepSeek](https://img.shields.io/badge/DeepSeek-0A0A0A?style=flat-square&logoColor=white)
+![OpenRouter](https://img.shields.io/badge/OpenRouter-6366F1?style=flat-square&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white)
 
 **Full Stack SaaS**
 
 ![Next.js](https://img.shields.io/badge/Next.js_15-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript_Strict-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma_7-2D3748?style=flat-square&logo=prisma&logoColor=white)
 ![Tailwind](https://img.shields.io/badge/Tailwind_v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)
+![Better Auth](https://img.shields.io/badge/Better_Auth-000000?style=flat-square&logoColor=white)
 
 **Edge & Mobile**
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white)
+![Coroutines](https://img.shields.io/badge/Coroutines-18D4A5?style=flat-square&logo=kotlin&logoColor=white)
 ![Android](https://img.shields.io/badge/Android_Native-3DDC84?style=flat-square&logo=android&logoColor=white)
-![ARM](https://img.shields.io/badge/ARM64_VPS-0091BD?style=flat-square&logo=arm&logoColor=white)
+![Protobuf](https://img.shields.io/badge/Protobuf-4285F4?style=flat-square&logo=google&logoColor=white)
+![WiFi Direct](https://img.shields.io/badge/WiFi_Direct_P2P-0078D4?style=flat-square&logoColor=white)
+![ARM](https://img.shields.io/badge/ARM64-0091BD?style=flat-square&logo=arm&logoColor=white)
 
-**Infrastructure**
+**Backend & APIs**
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![REST](https://img.shields.io/badge/REST_API-FF6C37?style=flat-square&logoColor=white)
+![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white)
+![Upstash](https://img.shields.io/badge/Upstash_Redis-00E9A3?style=flat-square&logoColor=white)
+
+**Infrastructure & DevOps**
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![Docker Compose](https://img.shields.io/badge/Docker_Compose-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=flat-square&logo=traefikproxy&logoColor=white)
 ![Ubuntu](https://img.shields.io/badge/Ubuntu_24.04_LTS-E95420?style=flat-square&logo=ubuntu&logoColor=white)
 ![Coolify](https://img.shields.io/badge/Coolify-6D28D9?style=flat-square&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
 ---
 
 ## 🖥️ Self-Hosted Infrastructure
 
-> *No PaaS dependency. No managed infra tax. Real Linux, real ownership.*
+> *Self-hosted on bare-metal Linux — no managed platform abstraction layer.*
 
 ```
 netcup VPS 1000 ARM G11  ·  Manassas, USA
@@ -89,19 +134,20 @@ netcup VPS 1000 ARM G11  ·  Manassas, USA
 └── 🧠 Hosts: smagent Cognitive Runtime · future SMLabs AI services
 ```
 
-Running production-grade infrastructure on bare metal means understanding what most "AI developers" skip — kernel tuning, container networking, reverse proxy config, SSL cert management, and zero-downtime deployments without a $500/mo Heroku bill.
+Provisioning, securing, and operating Linux servers without a managed platform layer.
 
 ---
 
-## 📌 Pinned Work
+## 📌 Pinned Systems
 
-| Project | What It Is | Stack |
+| System | What It Is | Stack |
 |---|---|---|
-| [medgemma-forensic](https://github.com/smjahid012/medgemma-forensic) | Offline AI pathologist — multimodal diagnostics on edge Android | Kotlin, LiteRT, ONNX |
-| [serper-search-mcp-server](https://github.com/smjahid012/serper-search-mcp-server) | Enterprise MCP server for Serper web search | TypeScript, MCP |
-| [smagent](https://github.com/smjahid012/smagent) *(private)* | Cognitive Runtime — agentic OS with real orchestration primitives | Python |
-| [smexpense](https://smexpense.com) *(private)* | Live AI expense SaaS — first product of SMLabs AI | Next.js, Supabase, Prisma |
-| [smportfolio](https://github.com/smjahid012/smportfolio) | Personal portfolio | TypeScript |
+| [medgemma-forensic](https://github.com/smjahid012/medgemma-forensic) *(public)* | Edge AI pathologist — multimodal diagnostics on Android | Kotlin, LiteRT, ONNX, Protobuf, P2P |
+| [serper-search-mcp-server](https://github.com/smjahid012/serper-search-mcp-server) *(public)* | Enterprise MCP server for agent web search | TypeScript, MCP, Node.js, Serper API |
+| [smagent](https://github.com/smjahid012/smagent) *(private)* | Cognitive Runtime — agentic OS, orchestration primitives | Python, LangGraph, Redis, MCP |
+| [anthropic-proxy](https://github.com/smjahid012) *(public)* | LLM gateway routing Claude Code through Gemini, Groq, DeepSeek | Python, Claude API, Gemini, Groq, DeepSeek |
+| [smexpense](https://smexpense.com) *(private)* | Live AI expense SaaS — receipt OCR, voice input, smart budgeting | Next.js, Supabase, Prisma, Tailwind, PostgreSQL, Redis |
+
 
 ---
 
@@ -128,24 +174,16 @@ Running production-grade infrastructure on bare metal means understanding what m
 
 ---
 
-## 🔭 What's Next
-
-- **Cognitive Runtime v1** — Public release of the smagent orchestration layer with cognitive state management primitives
-- **SMExpense Pro** — Expanding to family finance with military-tier subscription tiers (RECON / COMMAND / SOVEREIGN)
-- **Model Fine-tuning** — Domain-specific fine-tuning pipeline for edge-deployable models under SMLabs AI
-- **anthropic_proxy** — Multi-provider LLM proxy (Gemini, Groq, DeepSeek, OpenRouter) routing through Claude Code CLI — publishing soon
-
----
-
 ## 📫 Connect
 
 [![SMLabs AI](https://img.shields.io/badge/smlabsai.com-6366F1?style=for-the-badge&logo=rocket&logoColor=white)](https://smlabsai.com)
 [![SMExpense](https://img.shields.io/badge/smexpense.com-10B981?style=for-the-badge&logo=vercel&logoColor=white)](https://smexpense.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourhandle)
 [![GitHub](https://img.shields.io/badge/smjahid012-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/smjahid012)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace_Demo-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/spaces/smfaisal/medgemma-forensic)
 
 <div align="center">
 
-> *"The gap between 'AI enthusiast' and 'AI architect' is orchestration. Anyone can call an API. Few understand what happens between the calls."*
+> *"The difference between an AI enthusiast and an AI architect is orchestration."*
 
 </div>
