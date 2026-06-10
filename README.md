@@ -162,7 +162,7 @@ Provisioning, securing, and operating Linux servers without a managed platform l
 </picture>
 
 <img width="49%" src="https://github-readme-streak-stats.herokuapp.com?user=smjahid012&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" />
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smjahid012&layout=compact&theme=tokyonight&hide_border=true&langs_count=6&count_private=true" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smjahid012&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&count_private=true&hide=html,css" />
 
 <br/>
 
