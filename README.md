@@ -149,27 +149,6 @@ Provisioning, securing, and operating Linux servers without a managed platform l
 
 ---
 
-## 📊 GitHub Activity
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/smjahid012/smjahid012/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/smjahid012/smjahid012/output/github-contribution-grid-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/smjahid012/smjahid012/output/github-contribution-grid-snake-dark.svg" />
-</picture>
-
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com?user=smjahid012&theme=tokyonight&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" />
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=smjahid012&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&count_private=true&hide=php,blade,vue,html,css" />
-
-<br/>
-
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=smjahid012&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Activity" />
-
-</div>
-
----
-
 ## 📫 Connect
 
 [![SMLabs AI](https://img.shields.io/badge/smlabsai.com-6366F1?style=for-the-badge&logo=rocket&logoColor=white)](https://smlabsai.com)
